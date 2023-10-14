@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.homeNav {
+    background-color: var(--theme-yellow) !important;
+    transition: all 200ms linear;
+}
+
+.whiteBG {
+    background-color: #fff !important;
+}
+
+.blackBorder {
+    border-color: #000 !important;
+}
+
+.blackText {
+    color: #000 !important;
+}

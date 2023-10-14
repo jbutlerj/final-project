@@ -1,0 +1,179 @@
+header {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .header-wrapper {
+        position: fixed;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: none;
+
+        .navContainer {
+            width: 80%;
+            max-width: 1024px;
+            height: 95px;
+            margin: 0 auto;
+            padding: 0;
+            border-bottom: solid 2px #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo {
+
+                a{
+                    text-decoration: none;
+
+                    #dynamicLogo {
+                        width: 92px;
+                        height: 42px;
+                    }
+    
+                    #mqLogo {
+                        display: none;
+                        width: 92px;
+                        height: 42px;
+                    }
+                }
+            }
+
+            .full-size {
+                display: flex;
+                align-items: center;
+
+                a {
+                    font-family: var(--gsr);
+                    font-size: 15px;
+                    line-height: 19px;
+                    letter-spacing: 1.5px;
+                    color: #fff;
+                    text-decoration: none;
+                    scale: 1;
+                    text-shadow: none;
+                    transition: all 200ms;
+                }
+
+                a:hover {
+                    scale: 1.2;
+                    text-shadow: 2px 2px 3px rgba(0, 0, 0, .16);
+                }
+
+                .pipes {
+                    margin: 0 13px;
+                    font-family: var(--gsr);
+                    font-size: 22px;
+                    color: var(--theme-pink);
+                }        
+            }
+
+            .mobile {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 320px)
+and (max-width: 480px) {
+
+    header {
+
+        .header-wrapper {
+            
+            .navContainer {
+                width: 100%;
+                height: 100px;
+                padding: 0;
+                justify-content: center;
+                flex-direction: column;
+                background-color: var(--theme-yellow);
+                border-bottom: none;
+
+                .logo {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 60px;
+
+                    a{
+
+                        #dynamicLogo {
+                            display: none;
+                        }
+    
+                        #mqLogo {
+                            display: block;
+                        }
+                    }
+                }
+
+                .full-size {
+                    display: none;
+                }
+
+                .mobile {
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: #edc43b;
+
+                    a {
+                        width: calc(100% / 5);
+                        height: 100%;
+                        text-decoration: none;
+
+                        .linkContainer  {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-family: var(--gsr);
+                            font-size: 14px;
+                            line-height: 16px;
+                            color: #fff;
+                            border: solid 1px #fff;
+                            background-color: none;
+                            transition: all 200ms;
+                        }
+
+                        .linkContainer:hover {
+                            background-color: var(--theme-teal);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 481px)
+and (max-width: 800px) {
+
+    header {
+
+        .header-wrapper {
+            
+            .navContainer {
+                justify-content: center;
+                flex-direction: column;
+
+                .logo {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

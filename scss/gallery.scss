@@ -1,0 +1,303 @@
+.gallery {
+    width: 80%;
+    max-width: 1024px;
+    margin: 160px auto 50px auto;
+
+    .headline {
+        width: 100%;
+
+        h1 {
+            width: 229px;
+            font-family: var(--gsr);
+            font-size: 25px;
+            line-height: 29px;
+            letter-spacing: 2.5px;
+            color: #000;
+            text-transform: uppercase;
+            border-bottom: solid 2px #000;
+            margin-bottom: 30px;
+        }
+    }
+
+    .galleryGrid {
+        width: 100%;
+
+        .topRow {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            #food {
+                width: 49%;
+                height: 187px;
+                background-image: linear-gradient(to right, rgba(255 , 209, 64, .7)), url(../images/gallery/food.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-right: 20px;
+                scale: 1;
+                box-shadow: none;
+                transition: all 200ms;
+            }
+
+            #food:hover {
+                background-image: linear-gradient(to right, rgba(255 , 209, 64, 0)), url(../images/gallery/food.png);
+                scale: 1.02;
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, .16);
+            }
+ 
+            #dj {
+                width: 21%;
+                height: 187px;
+                background-image: linear-gradient(to right, rgba(238 , 67, 103, .7)), url(../images/gallery/dj.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-right: 20px;
+                scale: 1;
+                box-shadow: none;
+                transition: all 200ms;
+            }
+
+            #dj:hover {
+                background-image: linear-gradient(to right, rgba(238 , 67, 103, 0)), url(../images/gallery/dj.png);
+                scale: 1.02;
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, .16);
+            }
+
+            #speech {
+                width: 30%;
+                height: 187px;
+                background-image: linear-gradient(to right, rgba(8 , 173, 105, .7)), url(../images/gallery/speech.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                scale: 1;
+                box-shadow: none;
+                transition: all 200ms;
+            }
+
+            #speech:hover {
+                background-image: linear-gradient(to right, rgba(8 , 173, 105, 0)), url(../images/gallery/speech.png);
+                scale: 1.02;
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, .16);
+            }
+        }
+
+        .bottomRow {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            #open {
+                width: 63%;
+                height: 306px;
+                background-image: linear-gradient(to right, rgba(84 , 13, 110, .7)), url(../images/gallery/open.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-right: 20px;
+                scale: 1;
+                box-shadow: none;
+                transition: all 200ms;
+            }
+
+            #open:hover {
+                background-image: linear-gradient(to right, rgba(84 , 13, 110, 0)), url(../images/gallery/open.png);
+                scale: 1.02;
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, .16);
+            }
+ 
+            #international {
+                width: 37%;
+                height: 306px;
+                background-image: linear-gradient(to right, rgba(59, 206, 171, .7)), url(../images/gallery/international.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                scale: 1;
+                box-shadow: none;
+                transition: all 200ms;
+            }
+
+            #international:hover {
+                background-image: linear-gradient(to right, rgba(59, 206, 171, 0)), url(../images/gallery/international.png);
+                scale: 1.02;
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, .16);
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 320px)
+and (max-width: 600px) {
+
+    .gallery {
+        width: 90%;
+        margin: 120px auto 40px auto;
+
+        .galleryGrid {
+            
+            .topRow {
+                flex-direction: column;
+                margin-bottom: 0;
+
+                #food {
+                    width: 100%;
+                    height: 175px;
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+
+                #dj {
+                    width: 100%;
+                    height: 175px;
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+
+                #speech {
+                    width: 100%;
+                    height: 175px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .bottomRow {
+                flex-direction: column;
+
+                #open {
+                    width: 100%;
+                    height: 175px;
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+
+                #international {
+                    width: 100%;
+                    height: 175px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 601px)
+and (max-width: 800px) {
+
+    .gallery {
+
+        .galleryGrid {
+            
+            .topRow {
+
+                #food {
+                    width: calc(100% / 3);
+                }
+
+                #dj {
+                    width: calc(100% / 3);
+                }
+
+                #speech {
+                    width: calc(100% / 3);
+                }
+            }
+
+            .bottomRow {
+
+                #open {
+                    width: 50%;
+                }
+
+                #international {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 801px)
+and (max-width: 884px) {
+
+    .gallery {
+
+        .galleryGrid {
+            
+            .topRow {
+
+                #food {
+                    width: calc(100% - 400px);
+                }
+
+                #dj {
+                    width: 200px;
+                }
+
+                #speech {
+                    width: 200px;
+                }
+            }
+
+            .bottomRow {
+
+                #international {
+                    width: 310px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 885px)
+and (max-width: 1021px) {
+
+    .gallery {
+
+        .galleryGrid {
+            
+            .topRow {
+
+                #dj {
+                    width: 200px;
+                }
+            }
+
+            .bottomRow {
+
+                #open {
+                    width: calc(100% - 310px);
+                }
+
+                #international {
+                    width: 310px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 1022px)
+and (max-width: 1241px) {
+
+    .gallery {
+
+        .galleryGrid {
+            
+            .topRow {
+
+                #dj {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
